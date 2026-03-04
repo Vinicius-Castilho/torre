@@ -43,7 +43,7 @@ const AtuacaoSociocultural = () => {
           
           <div className="absolute inset-0 z-0">
             <img 
-              src="/imagens/atuação/atuacao_sociocultural.jpg" 
+              src="/imagens/Atuação/atuacao_sociocultural.jpg" 
               alt="Atuação Sociocultural Torre" 
               className="w-full h-full object-cover opacity-25 grayscale scale-105"
             />

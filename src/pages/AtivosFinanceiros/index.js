@@ -63,7 +63,7 @@ const AtivosFinanceiros = () => {
           {/* Background - Caminho public corrigido */}
           <div className="absolute inset-0 z-0">
             <img 
-              src="/imagens/atuação/ativos_financeiros.jpg" 
+              src="/imagens/Atuação/ativos_financeiros.jpg" 
               alt="Ativos Financeiros Torre" 
               className="w-full h-full object-cover opacity-25 grayscale scale-105"
             />
