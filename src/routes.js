@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Trajetoria from './pages/Trajetoria';
@@ -15,8 +15,7 @@ import Erro from './pages/Erro';
 
 function RoutesApp() {
     return (
-        <BrowserRouter>
-            {/* O ScrollToTop monitora a troca de rotas dentro do BrowserRouter */}
+        <>
             <ScrollToTop />    
             <Header />
             <Whats />
@@ -28,11 +27,10 @@ function RoutesApp() {
                 <Route path='/easy-mall' element={<EasyMall />} />
                 <Route path='/gestao-de-creditos' element={<GestaoDeCreditos />} />
                 <Route path='/atuacao-sociocultural' element={<AtuacaoSociocultural />} />
-
                 <Route path='*' element={<Erro />} />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </>
     );
 }
 
