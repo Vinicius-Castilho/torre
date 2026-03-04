@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
-import { useLocation } from 'react-router-dom';
 
 
 const Trajetoria = () => {

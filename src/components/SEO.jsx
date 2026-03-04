@@ -25,7 +25,7 @@ function SEO({ title, description, image, url }) {
     updateMetaProperty("og:description", fullDescription);
     updateMetaProperty("og:url", fullUrl);
     updateMetaProperty("og:image", fullImage);
-  }, [location.pathname, title, description]);
+  }, [fullTitle, fullDescription, fullUrl, fullImage]);
 
   function updateMetaTag(name, content) {
     let element = document.querySelector(`meta[name="${name}"]`);
