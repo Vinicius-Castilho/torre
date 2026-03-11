@@ -2,9 +2,11 @@ import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
+import { useTranslation } from 'react-i18next';
 
 const AtivosFinanceiros = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   // ==========================================
   // 1. ANIMAÇÕES (ScrollReveal) - Revisado
@@ -49,8 +51,8 @@ const AtivosFinanceiros = () => {
     <>
       <SEO 
         key={pathname}
-        title="Ativos Financeiros" 
-        description="Estratégia, alocação, liquidez e diversificação."
+        title={t('ativos_financeiros.seo_title')}
+        description={t('ativos_financeiros.seo_desc')}
         path={pathname}
       />
 
@@ -73,12 +75,12 @@ const AtivosFinanceiros = () => {
           {/* Hero Content */}
           <div className="max-w-5xl mx-auto px-6 relative z-30 hero-content">
             <h1 className="text-5xl md:text-8xl font-bold text-white mb-10 leading-none mx-auto max-w-4xl tracking-tighter">
-              Ativos <span className="text-torreCyan">Financeiros</span>
+              {t('ativos_financeiros.hero_title_1')} <span className="text-torreCyan">{t('ativos_financeiros.hero_title_2')}</span>
             </h1>
             
             <div className="max-w-2xl mx-auto flex justify-center">
-              <p className=" text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95 text-left">
-                Estratégia, alocação, liquidez e diversificação.
+              <p className=" text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95">
+                {t('ativos_financeiros.seo_desc')}
               </p>
             </div>
           </div>
@@ -103,7 +105,7 @@ const AtivosFinanceiros = () => {
             <div id="conteudo-principal" className="space-y-10 text-slate-700 text-lg md:text-xl leading-loose font-light">
               
               <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-torreBlue first-letter:mr-3 first-letter:float-left">
-                A Torre Participações conduz uma gestão integrada dos ativos financeiros do Grupo, definindo a estratégia de alocação e crescimento do patrimônio com uma visão de longo prazo.
+                {t('ativos_financeiros.p1')}
               </p>
               
               {/* <p>
@@ -113,12 +115,12 @@ const AtivosFinanceiros = () => {
               {/* Adicionada a classe destaque-card para o Reveal funcionar aqui */}
               <div className="bg-slate-50 p-8 rounded-2xl border-l-4 border-torreCyan shadow-sm">
                 <p className="text-torreBlue font-medium italic">
-                  A atuação combina disciplina de risco, diversificação e governança, buscando crescimento sustentável e consistência na geração de valor.
+                {t('ativos_financeiros.p1')}
                 </p>
               </div>
 
               <p>
-                Executa uma gestão orientada por análise, governança e disciplina de execução.
+                {t('ativos_financeiros.p2')}
               </p>
             </div>
 
@@ -138,7 +140,7 @@ const AtivosFinanceiros = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                   </svg>
                 </div>
-                <span className="font-bold uppercase text-[11px] tracking-[0.3em]">Voltar ao Topo</span>
+                <span className="font-bold uppercase text-[11px] tracking-[0.3em]">{t('ativos_financeiros.back_to_top')}</span>
               </Link>
             </div>
           </div>

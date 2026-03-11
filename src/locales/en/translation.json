@@ -1,0 +1,173 @@
+{
+  "header": {
+    "quem_somos": "About Us",
+    "atuacao": "Business Areas",
+    "contato": "Contact"
+  },
+  "home": {
+    "seo": {
+      "title": "Torre Participações | Legacy and Future in Investments",
+      "description": "Business group with over 150 years of history, acting in real estate development, financial assets, credit management, and strategic holdings in Brazil."
+    },
+    "hero": {
+      "title": "A Group with over 150 years of achievements",
+      "subtitle": "A bridge connecting legacy to the future."
+    },
+    "history": {
+      "title": "About Us",
+      "p1": "Torre Participações is a private investment holding company, focused on value creation and wealth perpetuation.",
+      "p2": "Throughout nearly two centuries, the Group has built a trajectory marked by investments in different sectors, always adapting to the changes of each moment and looking towards the future.",
+      "button": "Learn More"
+    },
+    "services": {
+      "title": "Business Areas",
+      "button": "Explore area",
+      "assets": {
+        "title": "Financial Assets",
+        "description": "Integrated asset management of the Group, with a long-term vision."
+      },
+      "real_estate": {
+        "title": "Real Estate Development",
+        "description": "Own portfolio of land plots distributed across several states."
+      },
+      "credit": {
+        "title": "Credit Management",
+        "description": "Own credit portfolio (NPL), focusing on asset recovery."
+      },
+      "social": {
+        "title": "Sociocultural Performance",
+        "description": "Appreciation of memory and promotion of entrepreneurship via Baptista da Silva Institute."
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "We are available to answer questions and present the Torre Participações Group.",
+      "form": {
+        "name": "Name",
+        "name_placeholder": "E.g.: John Doe",
+        "email": "Email",
+        "email_placeholder": "E.g.: contact@company.com",
+        "message": "Message",
+        "message_placeholder": "How can we help?",
+        "send": "Send",
+        "sending": "Sending...",
+        "success": "Message sent successfully!",
+        "error": "Error sending"
+      }
+    }
+  },
+
+  "trajetoria": {
+    "seo_title": "Group Trajectory and History",
+    "seo_desc": "Discover the trajectory of Torre Participações, a holding company with over 150 years of history, marked by solidity and strategic performance.",
+    "hero_badge": "Since 1850",
+    "hero_title_1": "A legacy of",
+    "hero_title_2": "solidity",
+    "hero_title_3": "that spans centuries.",
+    "hero_subtitle": "Throughout its trajectory, the Group has built a solid corporate memory, marked by pioneering spirit, diversification, and adaptability.",
+    "timeline": {
+      "t1850": {
+        "event1_title": "Mendes Lima & Cia",
+        "event1_desc": "Where it all began, with the arrival of Antônio Fernandes Ribeiro.",
+        "event2_title": "Cotonifício Torre",
+        "event2_desc": "One of the main textile industries in the Northeast of Brazil.",
+        "event3_title": "Usina Trapiche",
+        "event3_desc": "One of the largest and most traditional sugar and alcohol production complexes."
+      },
+      "t1942": {
+        "event1_title": "Banco Banorte",
+        "event1_desc": "One of Brazil's largest private banks, a synonym for innovation.",
+        "event2_title": "Comprebem",
+        "event2_desc": "Supermarket chain, with strong ties to local communities.",
+        "event3_title": "BSM Sistemas e Métodos",
+        "event3_desc": "IT company, a national reference in banking automation.",
+        "event4_title": "Advance Vigilância",
+        "event4_desc": "One of the leading security and armored car companies in the Northeast."
+      },
+      "t2022": {
+        "event1_title": "Torre Participações",
+        "event1_desc": "Consolidation as a private investment holding company."
+      }
+    },
+    "quote": "This legacy not only sustains the business but also guides its vision of the future."
+  },
+
+  "ativos_financeiros": {
+    "seo_title": "Financial Assets",
+    "seo_desc": "Strategy, allocation, liquidity, and diversification.",
+    "hero_title_1": "Financial",
+    "hero_title_2": "Assets",
+    "hero_subtitle": "Strategy, allocation, liquidity, and diversification.",
+    "p1": "Torre Participações conducts an integrated management of the Group's financial assets, defining the strategy for allocation and portfolio growth with a long-term vision.",
+    "card_highlight": "The performance combines risk discipline, diversification, and governance, seeking sustainable growth and consistency in value generation.",
+    "p2": "It executes management guided by analysis, governance, and execution discipline.",
+    "back_to_top": "Back to Top"
+  },
+
+    "desenvolvimento_imobiliario": {
+    "seo_title": "Real Estate Development",
+    "seo_desc": "Strategic vision and implementation rigor to transform opportunities into developments.",
+    "hero_title_1": "Real Estate",
+    "hero_title_2": "Development",
+    "hero_subtitle": "Strengthening the portfolio throughout the cycle.",
+    "p1": "In real estate development, Torre Participações combines strategic vision and implementation rigor to transform opportunities into successful ventures.",
+    "p2": "The performance starts from vocation and feasibility analysis — usage potential, local dynamics, and economic rationale — to structure tailor-made projects, aligned with the context of each location and consistent value generation.",
+    "portfolio_tag": "Portfolio",
+    "portfolio_title": "Projects",
+    "easy_mall_desc": "One of Torre Participações' businesses — convenience that improves the neighborhood's routine.",
+    "easy_mall_btn": "View Project",
+    "back_to_top": "Back to Top"
+  },
+
+  "easy_mall": {
+    "seo_title": "Easy Mall | Convenience in the Torre Neighborhood",
+    "seo_desc": "Easy Mall is Torre Participações' convenience center in Recife. Practicality, commercial space leasing, and ease for your daily routine.",
+    "hero_title_1": "Easy",
+    "hero_title_2": "Mall",
+    "hero_subtitle": "Convenience that improves the neighborhood's routine.",
+    "p1": "Easy Mall is a Torre Participações project designed to support the daily lives of those who live and move through the Torre neighborhood in Recife, PE.",
+    "p2": "With a close, simple, and functional concept, Easy Mall was born to offer a smoother experience: less commuting, more convenience, and more time for what matters.",
+    "p3": "The proposal is to be a landmark in the neighborhood — a place that integrates with the local rhythm, facilitates the routine, and contributes to a more practical and light urban dynamic.",
+    "card_highlight": "Easy Mall reinforces Torre Participações' commitment to bringing together proximity, convenience, and efficiency in a single address.",
+    "contact_text": "If you are interested in leasing a space for your business, please contact LMS Empreendimentos at",
+    "contact_or": "or",
+    "contact_link": "click here.",
+    "back_to_top": "Back to Top"
+  },
+
+  "gestao_creditos": {
+    "seo_title": "Credit Management",
+    "seo_desc": "NPL portfolio management focusing on recovery and efficiency.",
+    "hero_title_1": "Credit",
+    "hero_title_2": "Management",
+    "hero_subtitle": "Continuous monitoring of assets with a long-term vision.",
+    "p1": "In the NPL (Non-Performing Loans) Credit Management front, Torre manages its own portfolio, acting actively to structure strategies and conduct each asset with a focus on recovery, efficiency, and sustainable return, always with a long-term vision and pragmatism in execution.",
+    "back_to_top": "Back to Top"
+  },
+
+  "atuacao_sociocultural": {
+    "seo_title": "Sociocultural Performance",
+    "seo_desc": "The Baptista da Silva Institute was created to foster culture and stimulate the entrepreneurial spirit.",
+    "hero_title_1": "Sociocultural",
+    "hero_title_2": "Performance",
+    "hero_subtitle": "Preservation of historical memory and fostering of the entrepreneurial spirit.",
+    "p1": "The Baptista da Silva Institute was founded to foster culture and stimulate the entrepreneurial spirit, honoring the history of entrepreneurship of the Baptista da Silva family and transforming memory into legacy.",
+    "card_highlight": "With a vision of culture as a complete journey, the IBS is structured to act from the preservation and enhancement of history to education and promotion.",
+    "p2": "Open to new discoveries, to what deserves to be maintained, and, above all, to what is yet to be created.",
+    "back_to_top": "Back to Top"
+  },
+
+  "footer": {
+      "endereco": "944 José Bonifácio St, Torre, Recife-PE Brazil 50710-001",
+      "fone": "Phone",
+      "direitos": "© 2026 Torre Participações. All rights reserved. Present in the future."
+    },
+
+  "not_found": {
+    "seo_title": "Page not found",
+    "seo_desc": "The content you are looking for is not available or the address was typed incorrectly.",
+    "title": "Page not found",
+    "desc": "The content you are looking for is not available or the address was typed incorrectly.",
+    "btn_back": "Back to Home"
+  }
+}

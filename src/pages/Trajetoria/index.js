@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
+import { useTranslation } from 'react-i18next';
 
 
 const Trajetoria = () => {
+  const { t } = useTranslation();
 
   useEffect(() => {
     const sr = ScrollReveal({
@@ -25,8 +27,8 @@ const Trajetoria = () => {
     <>
 
       <SEO
-        title="Trajetória e História do Grupo"
-        description="Conheça a trajetória da Torre Participações, holding com mais de 150 anos de história, marcada por solidez, pioneirismo, diversificação e atuação estratégica em desenvolvimento imobiliário e gestão de ativos."
+        title={t('trajetoria.seo_title')}
+        description={t('trajetoria.seo_desc')}
       />
     
       <main className="bg-white">
@@ -40,16 +42,16 @@ const Trajetoria = () => {
 
           <div className="max-w-5xl mx-auto px-6 relative z-20 hero-content">
               <span className="inline-block px-4 py-2 bg-torreCyan/20 text-torreCyan rounded-full text-xs font-black uppercase tracking-[0.3em] mb-8 border border-torreCyan/30">
-              Desde 1850
+              {t('trajetoria.hero_badge')}
               </span>
               
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-10 leading-tight mx-auto max-w-4xl">
-              Um legado de <span className="text-torreCyan">solidez</span> que atravessa séculos.
+              {t('trajetoria.hero_title_1')} <span className="text-torreCyan">{t('trajetoria.hero_title_2')}</span> {t('trajetoria.hero_title_3')}
               </h1>
               
               <div className="max-w-3xl mx-auto space-y-6 text-blue-50 text-lg md:text-xl leading-relaxed opacity-90">
               <p>
-                  Ao longo de sua trajetória, o Grupo construiu uma memória empresarial sólida, marcada por pioneirismo, diversificação e capacidade de adaptação.
+                  {t('trajetoria.hero_subtitle')}
               </p>
               </div>
           </div>
@@ -83,20 +85,20 @@ const Trajetoria = () => {
                 <div className="space-y-12 pt-12 md:pt-0">
                   <div className="relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-16 group text-left">
                     <div className="absolute left-[-5px] md:left-[-6px] top-2 w-3 h-3 bg-torreCyan rounded-full border-2 border-white ring-4 ring-slate-50 transition-all group-hover:scale-125"></div>
-                    <h3 className="text-xl font-bold text-slate-800">Mendes Lima & Cia</h3>
-                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">Onde tudo começou, com a chegada de Antônio Fernandes Ribeiro.</p>
+                    <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t1850.event1_title')}</h3>
+                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t1850.event1_desc')}</p>
                   </div>
                   
                   <div className="relative pl-12 md:pl-0 md:w-1/2 md:mr-auto md:pr-16 md:text-right group text-left md:text-right">
                     <div className="absolute left-[-5px] md:left-auto md:right-[-6px] top-2 w-3 h-3 bg-slate-300 rounded-full border-2 border-white ring-4 ring-slate-50 group-hover:bg-torreCyan transition-colors"></div>
-                    <h3 className="text-xl font-bold text-slate-800">Cotonifício Torre</h3>
-                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">Uma das principais indústrias têxteis do Nordeste.</p>
+                    <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t1850.event2_title')}</h3>
+                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t1850.event2_desc')}</p>
                   </div>
 
                   <div className="relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-16 group text-left">
                     <div className="absolute left-[-5px] md:left-[-6px] top-2 w-3 h-3 bg-slate-300 rounded-full border-2 border-white ring-4 ring-slate-50 group-hover:bg-torreCyan transition-colors"></div>
-                    <h3 className="text-xl font-bold text-slate-800">Usina Trapiche</h3>
-                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">Um dos maiores e mais tradicionais complexos produtores de açúcar e álcool.</p>
+                    <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t1850.event3_title')}</h3>
+                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t1850.event3_desc')}</p>
                   </div>
                 </div>
               </article>
@@ -110,44 +112,31 @@ const Trajetoria = () => {
                 <div className="space-y-12 pt-16 md:pt-0">
                   <div className="relative pl-12 md:pl-0 md:w-1/2 md:mr-auto md:pr-16 md:text-right group text-left md:text-right">
                     <div className="absolute left-[-5px] md:left-auto md:right-[-6px] top-2 w-3 h-3 bg-torreCyan rounded-full border-2 border-white ring-4 ring-slate-50"></div>
-                    <h3 className="text-xl font-bold text-slate-800">Banco Banorte</h3>
-                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">Um dos maiores bancos privados do Brasil, sinônimo de inovação.</p>
+                    <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t1942.event1_title')}</h3>
+                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t1942.event1_desc')}</p>
                   </div>
                   
                   <div className="relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-16 group text-left">
                     <div className="absolute left-[-5px] md:left-[-6px] top-2 w-3 h-3 bg-slate-300 rounded-full border-2 border-white ring-4 ring-slate-50 group-hover:bg-torreCyan transition-colors"></div>
-                    <h3 className="text-xl font-bold text-slate-800">Comprebem</h3>
-                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">Rede de supermercados, com forte ligação às comunidades locais.</p>
+                    <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t1942.event2_title')}</h3>
+                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t1942.event2_desc')}</p>
                   </div>
                   
                 <div className="relative pl-12 md:pl-0 md:w-1/2 md:mr-auto md:pr-16 md:text-right group">
                       <div className="absolute left-[-5px] md:left-auto md:right-[-6px] top-2 w-3 h-3 bg-slate-300 rounded-full border-2 border-white ring-4 ring-slate-50 group-hover:bg-torreCyan transition-colors"></div>
-                      <h3 className="text-xl font-bold text-slate-800">BSM Sistemas e Métodos</h3>
-                      <p className="text-slate-500 mt-2 text-sm leading-relaxed">Empresa de TI, referência nacional em automação bancária.</p>
+                      <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t1942.event3_title')}</h3>
+                      <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t1942.event3_desc')}</p>
                   </div>
                           
                   <div className="relative pl-12 md:pl-0 md:w-1/2 md:ml-auto md:pl-16 group">
                       <div className="absolute left-[-5px] md:left-[-6px] top-2 w-3 h-3 bg-slate-300 rounded-full border-2 border-white ring-4 ring-slate-50 group-hover:bg-torreCyan transition-colors"></div>
-                      <h3 className="text-xl font-bold text-slate-800">Advance Vigilância</h3>
-                      <p className="text-slate-500 mt-2 text-sm leading-relaxed">Uma das principais empresas de segurança e transporte de valores do Nordeste.</p>
+                      <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t1942.event4_title')}</h3>
+                      <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t1942.event4_desc')}</p>
                   </div>
                   
                   
                 </div>
               </article>
-
-              {/* EVENTO 2022 */}
-              {/* <article className="relative pt-10">
-                <div className="flex absolute left-1/2 -top-4 transform -translate-x-1/2 flex-col items-center z-10">
-                  <time className="bg-white px-4 py-1 text-torreBlue font-black text-2xl border border-slate-200 rounded-full shadow-sm">2022</time>
-                </div>
-                <div className="relative pl-0 text-center pt-20 md:pt-16 group">
-                  <h3 className="text-2xl font-bold text-torreBlue uppercase tracking-wide">Torre Participações</h3>
-                  <p className="text-slate-600 mt-4 max-w-lg mx-auto text-base leading-relaxed px-4">
-                    Consolidação como uma holding de investimentos privada.
-                  </p>
-                </div>
-              </article> */}
 
               <article className="relative pt-10">
                 <div className="flex absolute left-4 md:left-1/2 -top-4 transform md:-translate-x-1/2 flex-col items-center">
@@ -157,8 +146,8 @@ const Trajetoria = () => {
                 <div className="space-y-12 pt-16 md:pt-0">
                   <div className="relative pl-12 md:pl-0 md:w-1/2 md:mr-auto md:pr-16 md:text-right group text-left md:text-right">
                     <div className="absolute left-[-5px] md:left-auto md:right-[-6px] top-2 w-3 h-3 bg-torreCyan rounded-full border-2 border-white ring-4 ring-slate-50"></div>
-                    <h3 className="text-xl font-bold text-slate-800">Torre Participações</h3>
-                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">Consolidação como uma holding de investimentos privada.</p>
+                    <h3 className="text-xl font-bold text-slate-800">{t('trajetoria.timeline.t2022.event1_title')}</h3>
+                    <p className="text-slate-500 mt-2 text-sm leading-relaxed">{t('trajetoria.timeline.t2022.event1_desc')}</p>
                   </div>
                 </div>
               </article>
@@ -172,11 +161,9 @@ const Trajetoria = () => {
         <section className="py-24 bg-white border-t border-slate-100 text-center">
           <div className="max-w-4xl mx-auto px-6">
             <blockquote className="text-xl md:text-2xl text-slate-700 leading-relaxed font-light mb-8 italic">
-                Esse legado não apenas sustenta os negócios, como orienta sua visão de futuro. 
+                {t('trajetoria.quote')}
             </blockquote>
-            {/* <p className="text-torreBlue font-bold text-lg">
-              Esse legado não apenas sustenta os negócios, como orienta sua visão de futuro. 
-            </p> */}
+
           </div>
         </section>
       </main>

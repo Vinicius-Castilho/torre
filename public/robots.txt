@@ -1,0 +1,11 @@
+# robots.txt para torre.com.br
+User-agent: *
+Allow: /
+
+# Evita indexação de arquivos de mapeamento de código e manifestos técnicos
+Disallow: /static/js/*.map
+Disallow: /asset-manifest.json
+Disallow: /manifest.json
+
+# Indica o caminho do mapa do site para os buscadores
+Sitemap: https://torre.com.br/sitemap.xml

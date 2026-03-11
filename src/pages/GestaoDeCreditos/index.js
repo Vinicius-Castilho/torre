@@ -2,9 +2,12 @@ import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
+import { useTranslation } from 'react-i18next';
+
 
 const GestaoCreditos = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
   useEffect(() => {
     ScrollReveal().destroy();
     const sr = ScrollReveal({
@@ -41,8 +44,8 @@ const GestaoCreditos = () => {
     <>
       <SEO 
         key={pathname}
-        title="Gestão de Créditos" 
-        description="Acompanhamento contínuo dos ativos com visão de longo prazo."
+        title={t('gestao_creditos.seo_title')} 
+        description={t('gestao_creditos.seo_desc')}
         path={pathname}
       />
       <div className="bg-white">
@@ -67,12 +70,12 @@ const GestaoCreditos = () => {
 
             <div className="max-w-5xl mx-auto px-6 relative z-30">
               <h1 className="reveal-h1 text-5xl md:text-8xl font-bold text-white mb-10 leading-none mx-auto max-w-4xl tracking-tighter">
-                Gestão de <span className="text-torreCyan">Créditos</span>
+                {t('gestao_creditos.hero_title_1')} <span className="text-torreCyan">{t('gestao_creditos.hero_title_2')}</span>
               </h1>
               
               <div className="max-w-2xl mx-auto flex justify-center">
-                <p className="reveal-p-hero text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95 text-left">
-                  Acompanhamento contínuo dos ativos  com visão de longo prazo.
+                <p className="reveal-p-hero text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95">
+                  {t('gestao_creditos.hero_subtitle')}
                 </p>
               </div>
             </div>
@@ -93,7 +96,7 @@ const GestaoCreditos = () => {
             <div className="max-w-3xl mx-auto text-justify">
               <div className="space-y-10 text-slate-700 text-lg md:text-xl leading-loose font-light">
                 <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-torreBlue first-letter:mr-3 first-letter:float-left">
-                  Na frente de Gestão de Crédito NPL (Non-Performing Loans), a Torre realiza a administração de carteira própria, atuando de forma ativa para estruturar estratégias e conduzir cada ativo com foco em recuperação, eficiência e retorno sustentável, sempre com visão de longo prazo e pragmatismo na execução.
+                  {t('gestao_creditos.p1')}
                 </p>
               </div>
 
@@ -113,7 +116,7 @@ const GestaoCreditos = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                     </svg>
                   </div>
-                  <span className="font-bold uppercase text-[11px] tracking-[0.3em]">Voltar ao Topo</span>
+                  <span className="font-bold uppercase text-[11px] tracking-[0.3em]">{t('gestao_creditos.back_to_top')}</span>
                 </Link>
               </div>
             </div>

@@ -2,9 +2,11 @@ import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
+import { useTranslation } from 'react-i18next';
 
 const DesenvolvimentoImobiliario = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   // ==========================================
   // 1. CONFIGURAÇÃO DE ANIMAÇÕES (ScrollReveal)
@@ -46,8 +48,8 @@ const DesenvolvimentoImobiliario = () => {
     <>
       <SEO 
         key={pathname}
-        title="Desenvolvimento Imobiliário" 
-        description="Visão estratégica e rigor de implantação para transformar oportunidades em empreendimentos."
+        title={t('desenvolvimento_imobiliario.seo_title')} 
+        description={t('desenvolvimento_imobiliario.seo_desc')}
         path={pathname}
       />
       
@@ -69,12 +71,12 @@ const DesenvolvimentoImobiliario = () => {
           {/* HERO - Removida a classe opacity-0 para teste de segurança */}
           <div className="max-w-5xl mx-auto px-6 relative z-30 reveal-hero">
             <h1 className="text-5xl md:text-8xl font-bold text-white mb-10 leading-none mx-auto max-w-4xl tracking-tighter">
-              Desenvolvimento <span className="text-torreCyan">Imobiliário</span>
+              {t('desenvolvimento_imobiliario.hero_title_1')} <span className="text-torreCyan">{t('desenvolvimento_imobiliario.hero_title_2')}</span>
             </h1>
             
             <div className="max-w-2xl mx-auto flex justify-center">
-              <p className="text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95 text-left text-center">
-                Fortalecimento do portfólio ao longo do ciclo.
+              <p className="text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95s">
+                {t('desenvolvimento_imobiliario.hero_subtitle')}
               </p>
             </div>
           </div>
@@ -97,10 +99,10 @@ const DesenvolvimentoImobiliario = () => {
           <div className="max-w-3xl mx-auto text-justify">
             <div className="space-y-10 text-slate-700 text-lg md:text-xl leading-loose font-light">
               <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-torreBlue first-letter:mr-3 first-letter:float-left">
-                No desenvolvimento imobiliário, a Torre Participações combina visão estratégica e rigor de implantação para transformar oportunidades em empreendimentos.
+                {t('desenvolvimento_imobiliario.p1')}
               </p>
               <p>
-                A atuação parte de análise de vocação e viabilidade — potencial de uso, dinâmica local e racional econômico — para estruturar projetos sob medida, alinhados ao contexto de cada localização e à geração consistente de valor.
+                {t('desenvolvimento_imobiliario.p2')}
               </p>
             </div>
           </div>
@@ -112,8 +114,8 @@ const DesenvolvimentoImobiliario = () => {
         <section className="pt-16 pb-24 px-6 bg-slate-50 border-y border-slate-100">
           <div className="max-w-5xl mx-auto">
             <div className="mb-12 reveal-portfolio-title text-left">
-              <h2 className="text-torreBlue font-bold uppercase text-xs tracking-[0.4em] mb-4">Portfólio</h2>
-              <h3 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Empreendimentos</h3>
+              <h2 className="text-torreBlue font-bold uppercase text-xs tracking-[0.4em] mb-4">{t('desenvolvimento_imobiliario.portfolio_tag')}</h2>
+              <h3 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">{t('desenvolvimento_imobiliario.portfolio_title')}</h3>
             </div>
 
             <Link 
@@ -131,11 +133,11 @@ const DesenvolvimentoImobiliario = () => {
 
                 <div className="w-full md:w-2/3 p-10 md:p-16 text-left flex flex-col justify-center">
                   <p className="text-slate-600 text-lg md:text-xl leading-relaxed mb-8 font-normal">
-                    Um dos negócios da Torre Participações — praticidade que melhora a rotina do bairro.
+                    {t('desenvolvimento_imobiliario.easy_mall_desc')}
                   </p>
                   
                   <div className="flex items-center gap-3 text-torreBlue font-bold uppercase text-xs tracking-widest group-hover:gap-5 transition-all duration-300">
-                    <span>Conhecer Unidade</span>
+                    <span>{t('desenvolvimento_imobiliario.easy_mall_btn')}</span>
                     <span className="text-xl">→</span>
                   </div>
                 </div>
@@ -162,7 +164,7 @@ const DesenvolvimentoImobiliario = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>
               </div>
-              <span className="font-bold uppercase text-[11px] tracking-[0.3em]">Voltar ao Topo</span>
+              <span className="font-bold uppercase text-[11px] tracking-[0.3em]">{t('desenvolvimento_imobiliario.back_to_top')}</span>
             </Link>
           </div>
         </section>

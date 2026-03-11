@@ -5,10 +5,12 @@ import ScrollReveal from 'scrollreveal';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SEO from '../../components/SEO';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const form = useRef();
   const { hash } = useLocation();
+  const { t } = useTranslation();
 
   // ==========================================
   // 1. LÓGICA DE SCROLL PARA LINKS EXTERNOS
@@ -62,11 +64,11 @@ const Home = () => {
     )
     .then(() => {
         setLoading(false)
-        toast.success('Mensagem enviada com sucesso!');
+        toast.success(t('home.contact.form.success'));
         e.target.reset();
     }, (error) => {
         setLoading(false)
-        toast.error('Erro ao enviar: ' + error.text);
+        toast.error(t('home.contact.form.error'));
     });
   };
 
@@ -74,7 +76,7 @@ const Home = () => {
     <>
     
       <SEO
-        description="Grupo empresarial com mais de 150 anos de história, atuando em desenvolvimento imobiliário, gestão de ativos financeiros, gestão de créditos e participações estratégicas no Brasil."
+        description={t("home.seo.description")}
       />
 
       <div className="bg-white">
@@ -110,10 +112,10 @@ const Home = () => {
           <div className="max-w-[1440px] mx-auto px-[8%] w-full flex flex-col lg:flex-row items-center justify-between gap-16 z-10 mt-31">
             <div className="max-w-xl text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl font-semibold tracking-tight leading-[1.1] mb-6 text-white">
-                Um Grupo com mais de 150 anos de realizações
+                {t('home.hero.title')}
               </h1>
               <p className="text-xl md:text-2xl text-torreCyan font-light">
-                Uma ponte que conecta um legado ao futuro.
+                {t('home.hero.subtitle')}
               </p>
             </div>
             {/* Scroll Down Arrow */}
@@ -134,14 +136,14 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             
             <div id="historia-texto">
-              <h2 className="text-3xl font-bold text-torreBlue mb-6">Sobre Nós</h2>
+              <h2 className="text-3xl font-bold text-torreBlue mb-6">{t('home.history.title')}</h2>
               
               <div className="relative max-h-52 overflow-hidden md:max-h-none md:overflow-visible transition-all duration-500">
                   <p className="text-slate-700 leading-relaxed">
-                      A Torre Participações é uma holding de investimentos privada, com foco na criação de valor e na perpetuação do patrimônio.
+                      {t('home.history.p1')}
                   </p>
                   <p className="mt-4 text-slate-700 leading-relaxed">
-                      Ao longo de quase dois séculos, o Grupo construiu uma trajetória marcada por investimentos em diferentes áreas, sempre se adaptando às transformações de cada momento e mantendo o olhar para o futuro.
+                      {t('home.history.p2')}
                   </p>
                   {/* Gradiente mobile para texto longo */}
                   <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-white to-transparent md:hidden pointer-events-none"></div>
@@ -149,7 +151,7 @@ const Home = () => {
 
               <div className="flex justify-center md:justify-start">
                   <Link to="/trajetoria" className="inline-flex items-center mt-8 px-6 py-3 border-2 border-torreBlue rounded-lg font-bold transition-all duration-300 group bg-torreBlue text-white md:bg-transparent md:text-torreBlue hover:bg-torreBlue hover:text-white">
-                      Saiba Mais
+                      {t('home.history.button')}
                       <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5-5 5M6 12h12"></path>
                       </svg>
@@ -170,7 +172,7 @@ const Home = () => {
             ========================================== */}
         <section id="atuacao" className="py-20 bg-torreGray text-center scroll-mt-24">
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-torreBlue mb-12">Áreas de Atuação</h2>
+            <h2 className="text-3xl font-bold text-torreBlue mb-12">{t('home.services.title')}</h2>
 
             <div id="cards" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
               
@@ -179,10 +181,10 @@ const Home = () => {
                 <div className="mb-8 p-5 bg-slate-50 rounded-2xl group-hover:bg-torreBlue/5 transition-colors duration-500">
                   <img src="/imagens/Ativos Financeiros.svg" alt="Ícone Ativos" className="w-16 h-16 transition-transform duration-500 group-hover:scale-110" />
                 </div>
-                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">Ativos Financeiros</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-10">Gestão integrada de ativos do Grupo, com visão de longo prazo.</p>
+                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">{t('home.services.assets.title')}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-10">{t('home.services.assets.description')}</p>
                 <div className="mt-auto inline-flex items-center px-8 py-3 rounded-full text-xs font-black uppercase tracking-[0.2em] transition-all duration-500 bg-torreBlue text-white md:bg-slate-100 md:text-torreBlue group-hover:bg-torreBlue group-hover:text-white">
-                  Explorar área
+                  {t('home.services.button')}
                   <span className="ml-2 inline-block transition-transform duration-500 group-hover:translate-x-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path d="M14 5l7 7-7 7M3 12h18"></path></svg>
                   </span>
@@ -194,10 +196,10 @@ const Home = () => {
                 <div className="mb-8 p-5 bg-slate-50 rounded-2xl group-hover:bg-torreBlue/5 transition-colors duration-500">
                   <img src="/imagens/Desenvolvimento Imobiliário.svg" alt="Ícone Imobiliário" className="w-16 h-16 transition-transform duration-500 group-hover:scale-110" />
                 </div>
-                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">Desenvolvimento Imobiliário</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-10">Portfólio próprio de terrenos distribuído em diversos estados.</p>
+                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">{t('home.services.real_estate.title')}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-10">{t('home.services.real_estate.description')}</p>
                 <div className="mt-auto inline-flex items-center px-8 py-3 rounded-full text-xs font-black uppercase tracking-[0.2em] transition-all duration-500 bg-torreBlue text-white md:bg-slate-100 md:text-torreBlue group-hover:bg-torreBlue group-hover:text-white">
-                  Explorar área
+                  {t('home.services.button')}
                   <span className="ml-2 inline-block transition-transform duration-500 group-hover:translate-x-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path d="M14 5l7 7-7 7M3 12h18"></path></svg>
                   </span>
@@ -209,10 +211,10 @@ const Home = () => {
                 <div className="mb-8 p-5 bg-slate-50 rounded-2xl group-hover:bg-torreBlue/5 transition-colors duration-500">
                   <img src="/imagens/Gestão de Créditos.svg" alt="Ícone Créditos" className="w-16 h-16 transition-transform duration-500 group-hover:scale-110" />
                 </div>
-                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">Gestão de Créditos</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-10">Carteira de crédito própria (NPL), com foco em recuperação de ativos.</p>
+                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">{t('home.services.credit.title')}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-10">{t('home.services.credit.description')}</p>
                 <div className="mt-auto inline-flex items-center px-8 py-3 rounded-full text-xs font-black uppercase tracking-[0.2em] transition-all duration-500 bg-torreBlue text-white md:bg-slate-100 md:text-torreBlue group-hover:bg-torreBlue group-hover:text-white">
-                  Explorar área
+                  {t('home.services.button')}
                   <span className="ml-2 inline-block transition-transform duration-500 group-hover:translate-x-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path d="M14 5l7 7-7 7M3 12h18"></path></svg>
                   </span>
@@ -223,10 +225,10 @@ const Home = () => {
                 <div className="mb-8 p-5 bg-slate-50 rounded-2xl group-hover:bg-torreBlue/5 transition-colors duration-500">
                   <img src="/imagens/atuacao-sociocultural.svg" alt="Ícone Créditos" className="w-16 h-16 transition-transform duration-500 group-hover:scale-110" />
                 </div>
-                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">Atuação Sociocultural</h3>
-                <p className="text-slate-500 text-sm leading-relaxed mb-10">Valorização da memória e fomento ao empreendedorismo via Instituto Baptista da Silva.</p>
+                <h3 className="text-xl font-bold text-torreBlue mb-4 tracking-tight leading-snug text-center max-w-[12ch] mx-auto min-h-[3.5rem]">{t('home.services.social.title')}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed mb-10">{t('home.services.social.description')}</p>
                 <div className="mt-auto inline-flex items-center px-8 py-3 rounded-full text-xs font-black uppercase tracking-[0.2em] transition-all duration-500 bg-torreBlue text-white md:bg-slate-100 md:text-torreBlue group-hover:bg-torreBlue group-hover:text-white">
-                  Explorar área
+                  {t('home.services.button')}
                   <span className="ml-2 inline-block transition-transform duration-500 group-hover:translate-x-1">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5"><path d="M14 5l7 7-7 7M3 12h18"></path></svg>
                   </span>
@@ -244,9 +246,9 @@ const Home = () => {
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16">
             
             <div className="border-l-4 border-torreCyan pl-6 flex flex-col justify-center">
-              <h3 className="text-3xl font-bold text-torreBlue mb-6">Fale Conosco</h3>
+              <h3 className="text-3xl font-bold text-torreBlue mb-6">{t('home.contact.title')}</h3>
               <p className="mb-8 text-slate-700 leading-relaxed max-w-md">
-                Estamos à disposição para esclarecer dúvidas e apresentar o Grupo Torre Participações.
+                {t('home.contact.description')}
               </p>
 
               <div className="space-y-6">
@@ -258,7 +260,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-slate-400">E-mail</p>
+                    <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{t('home.contact.form.email')}</p>
                     <a href="mailto:contato@torre.com.br" className="text-torreBlue font-semibold hover:text-torreCyan transition-colors">contato@torre.com.br</a>
                   </div>
                 </div>
@@ -295,16 +297,16 @@ const Home = () => {
 
             <form ref={form} onSubmit={sendEmail} id="form-contato" className="bg-white p-10 rounded-2xl shadow space-y-4 border border-slate-100">
               <div>
-                <label className="block font-semibold text-sm text-torreBlue mb-1">Nome</label>
-                <input name="name" placeholder="Ex: João Silva" required className="w-full border border-gray-300 rounded-lg px-4 py-2 transition-all duration-200 outline-none focus:border-torreBlue focus:ring-4 focus:ring-torreBlue/20" />
+                <label className="block font-semibold text-sm text-torreBlue mb-1">{t('home.contact.form.name')}</label>
+                <input name="name" placeholder={t('home.contact.form.name_placeholder')} required className="w-full border border-gray-300 rounded-lg px-4 py-2 transition-all duration-200 outline-none focus:border-torreBlue focus:ring-4 focus:ring-torreBlue/20" />
               </div>
               <div>
-                <label className="block font-semibold text-sm text-torreBlue mb-1">Email</label>
-                <input type="email" name="email" placeholder="Ex: contato@empresa.com.br" required className="w-full border border-gray-300 rounded-lg px-4 py-2 transition-all duration-200 outline-none focus:border-torreBlue focus:ring-4 focus:ring-torreBlue/20" />
+                <label className="block font-semibold text-sm text-torreBlue mb-1">{t('home.contact.form.email')}</label>
+                <input type="email" name="email" placeholder={t('home.contact.form.email_placeholder')} required className="w-full border border-gray-300 rounded-lg px-4 py-2 transition-all duration-200 outline-none focus:border-torreBlue focus:ring-4 focus:ring-torreBlue/20" />
               </div>
               <div>
-                <label className="block font-semibold text-sm text-torreBlue mb-1">Mensagem</label>
-                <textarea name="message" rows="4" placeholder="Como podemos ajudar?" required className="w-full border border-gray-300 rounded-lg px-4 py-2 transition-all duration-200 outline-none focus:border-torreBlue focus:ring-4 focus:ring-torreBlue/20"></textarea>
+                <label className="block font-semibold text-sm text-torreBlue mb-1">{t('home.contact.form.message')}</label>
+                <textarea name="message" rows="4" placeholder={t('home.contact.form.message_placeholder')} required className="w-full border border-gray-300 rounded-lg px-4 py-2 transition-all duration-200 outline-none focus:border-torreBlue focus:ring-4 focus:ring-torreBlue/20"></textarea>
               </div>
 
               <button type="submit" disabled={loading}
@@ -314,7 +316,7 @@ const Home = () => {
                     : "bg-torreBlue text-white hover:bg-blue-800"
                   }`}
                 >
-                {loading ? "Enviando..." : "Enviar"}
+                {loading ? t('home.contact.form.sending') : t('home.contact.form.send')}
               </button>
 
             </form>

@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
+import { useTranslation } from 'react-i18next';
 
 const AtuacaoSociocultural = () => {
   const { pathname } = useLocation();
+  const { t } = useTranslation();
 
   // ==========================================
   // 1. CONFIGURAÇÃO DE ANIMAÇÕES (ScrollReveal)
@@ -30,8 +32,8 @@ const AtuacaoSociocultural = () => {
     <>
       <SEO 
         key={pathname}
-        title="Atuação Sociocultural" 
-        description="O Instituto Baptista da Silva nasce para fomentar a cultura e estimular o espírito empreendedor."
+          title={t("atuacao_sociocultural.seo_title")} 
+          description={t("atuacao_sociocultural.seo_desc")}
         path={pathname}
       />
 
@@ -52,12 +54,12 @@ const AtuacaoSociocultural = () => {
 
           <div className="max-w-5xl mx-auto px-6 relative z-30 reveal-hero">
             <h1 className="text-5xl md:text-8xl font-bold text-white mb-10 leading-none tracking-tighter">
-              Atuação <span className="text-torreCyan">Sociocultural</span>
+              {t("atuacao_sociocultural.hero_title_1")} <span className="text-torreCyan">{t("atuacao_sociocultural.hero_title_2")}</span>
             </h1>
             
             <div className="max-w-2xl mx-auto flex justify-center">
-              <p className="text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95 text-left">
-                Preservação da memória histórica e fomento ao espírito empreendedor.
+              <p className="text-blue-50 text-xl md:text-2xl leading-relaxed font-light border-l-4 border-torreCyan pl-8 italic opacity-95">
+                {t("atuacao_sociocultural.hero_subtitle")}
               </p>
             </div>
           </div>
@@ -83,17 +85,17 @@ const AtuacaoSociocultural = () => {
               {/* COLUNA TEXTO (TEXTOS ORIGINAIS PRESERVADOS) */}
               <div className="space-y-10 text-slate-700 text-lg md:text-xl leading-loose font-light"> {/* Alterado para font-normal */}
                 <p className="first-letter:text-5xl first-letter:font-bold first-letter:text-torreBlue first-letter:mr-3 first-letter:float-left">
-                  O Instituto Baptista da Silva nasce para fomentar a cultura e estimular o espírito empreendedor, honrando a história de empreendedorismo da família Baptista da Silva e transformando memória em legado.
+                  {t("atuacao_sociocultural.p1")}
                 </p>
                 
                 <div className="bg-slate-50 p-8 rounded-2xl border-l-4 border-torreCyan shadow-sm">
                   <p className="text-torreBlue font-medium italic">
-                    Com uma visão de cultura como trilha completa, o IBS se estrutura para atuar da preservação e valorização da história à educação e ao fomento.
+                    {t("atuacao_sociocultural.card_highlight")}
                   </p>
                 </div>
 
                 <p>
-                  De portas abertas para novas descobertas, para o que merece ser mantido e, principalmente, para o que ainda está por ser criado.
+                  {t("atuacao_sociocultural.p2")}
                 </p>
               </div>
 
@@ -124,7 +126,7 @@ const AtuacaoSociocultural = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
                     </svg>
                   </div>
-                  <span className="font-bold uppercase text-[11px] tracking-[0.3em]">Voltar ao Topo</span>
+                  <span className="font-bold uppercase text-[11px] tracking-[0.3em]">{t("atuacao_sociocultural.back_to_top")}</span>
                 </Link>
               </div>
           </div>

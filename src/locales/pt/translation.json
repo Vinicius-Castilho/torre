@@ -1,0 +1,178 @@
+{
+  "header": {
+    "quem_somos": "Quem Somos",
+    "atuacao": "Atuação",
+    "contato": "Contato"
+  },
+  "home": {
+    "seo": {
+      "title": "Torre Participações | Legado e Futuro em Investimentos",
+      "description": "Grupo empresarial com mais de 150 anos de história, atuando em desenvolvimento imobiliário, gestão de ativos financeiros, gestão de créditos e participações estratégicas no Brasil."
+    },
+    "hero": {
+      "title": "Um Grupo com mais de 150 anos de realizações",
+      "subtitle": "Uma ponte que conecta um legado ao futuro."
+    },
+    "history": {
+      "title": "Sobre Nós",
+      "p1": "A Torre Participações é uma holding de investimentos privada, com foco na criação de valor e na perpetuação do patrimônio.",
+      "p2": "Ao longo de quase dois séculos, o Grupo construiu uma trajetória marcada por investimentos em diferentes áreas, sempre se adaptando às transformações de cada momento e mantendo o olhar para o futuro.",
+      "button": "Saiba Mais"
+    },
+    "services": {
+      "title": "Áreas de Atuação",
+      "button": "Explorar área",
+      "assets": {
+        "title": "Ativos Financeiros",
+        "description": "Gestão integrada de ativos do Grupo, com visão de longo prazo."
+      },
+      "real_estate": {
+        "title": "Desenvolvimento Imobiliário",
+        "description": "Portfólio próprio de terrenos distribuído em diversos estados."
+      },
+      "credit": {
+        "title": "Gestão de Créditos",
+        "description": "Carteira de crédito própria (NPL), com foco em recuperação de ativos."
+      },
+      "social": {
+        "title": "Atuação Sociocultural",
+        "description": "Valorização da memória e fomento ao empreendedorismo via Instituto Baptista da Silva."
+      }
+    },
+    "contact": {
+      "title": "Fale Conosco",
+      "description": "Estamos à disposição para esclarecer dúvidas e apresentar o Grupo Torre Participações.",
+      "form": {
+        "name": "Nome",
+        "name_placeholder": "Ex: João Silva",
+        "email": "Email",
+        "email_placeholder": "Ex: contato@empresa.com.br",
+        "message": "Mensagem",
+        "message_placeholder": "Como podemos ajudar?",
+        "send": "Enviar",
+        "sending": "Enviando...",
+        "success": "Mensagem enviada com sucesso!",
+        "error": "Erro ao enviar"
+      }
+    }
+  },
+
+  "trajetoria": {
+    "seo_title": "Trajetória e História do Grupo",
+    "seo_desc": "Conheça a trajetória da Torre Participações, holding com mais de 150 anos de história, marcada por solidez e atuação estratégica.",
+    "hero_badge": "Desde 1850",
+    "hero_title_1": "Um legado de",
+    "hero_title_2": "solidez",
+    "hero_title_3": "que atravessa séculos.",
+    "hero_subtitle": "Ao longo de sua trajetória, o Grupo construiu uma memória empresarial sólida, marcada por pioneirismo, diversificação e capacidade de adaptação.",
+    "timeline": {
+      "t1850": {
+        "event1_title": "Mendes Lima & Cia",
+        "event1_desc": "Onde tudo começou, com a chegada de Antônio Fernandes Ribeiro.",
+        "event2_title": "Cotonifício Torre",
+        "event2_desc": "Uma das principais indústrias têxteis do Nordeste.",
+        "event3_title": "Usina Trapiche",
+        "event3_desc": "Um dos maiores e mais tradicionais complexos produtores de açúcar e álcool."
+      },
+      "t1942": {
+        "event1_title": "Banco Banorte",
+        "event1_desc": "Um dos maiores bancos privados do Brasil, sinônimo de inovação.",
+        "event2_title": "Comprebem",
+        "event2_desc": "Rede de supermercados, com forte ligação às comunidades locais.",
+        "event3_title": "BSM Sistemas e Métodos",
+        "event3_desc": "Empresa de TI, referência nacional em automação bancária.",
+        "event4_title": "Advance Vigilância",
+        "event4_desc": "Uma das principais empresas de segurança e transporte de valores do Nordeste."
+      },
+      "t2022": {
+        "event1_title": "Torre Participações",
+        "event1_desc": "Consolidação como uma holding de investimentos privada."
+      }
+    },
+    "quote": "Esse legado não apenas sustenta os negócios, como orienta sua visão de futuro."
+  },
+
+  
+
+  "ativos_financeiros": {
+    "seo_title": "Ativos Financeiros",
+    "seo_desc": "Estratégia, alocação, liquidez e diversificação.",
+    "hero_title_1": "Ativos",
+    "hero_title_2": "Financeiros",
+    "hero_subtitle": "Estratégia, alocação, liquidez e diversificação.",
+    "p1": "A Torre Participações conduz uma gestão integrada dos ativos financeiros do Grupo, definindo a estratégia de alocação e crescimento do patrimônio com uma visão de longo prazo.",
+    "card_highlight": "A atuação combina disciplina de risco, diversificação e governança, buscando crescimento sustentável e consistência na geração de valor.",
+    "p2": "Executa uma gestão orientada por análise, governança e disciplina de execução.",
+    "back_to_top": "Voltar ao Topo"
+  },
+
+  "desenvolvimento_imobiliario": {
+      "seo_title": "Desenvolvimento Imobiliário",
+      "seo_desc": "Visão estratégica e rigor de implantação para transformar oportunidades em empreendimentos.",
+      "hero_title_1": "Desenvolvimento",
+      "hero_title_2": "Imobiliário",
+      "hero_subtitle": "Fortalecimento do portfólio ao longo do ciclo.",
+      "p1": "No desenvolvimento imobiliário, a Torre Participações combina visão estratégica e rigor de implantação para transformar oportunidades em empreendimentos.",
+      "p2": "A atuação parte de análise de vocação e viabilidade — potencial de uso, dinâmica local e racional econômico — para estruturar projetos sob medida, alinhados ao contexto de cada localização e à geração consistente de valor.",
+      "portfolio_tag": "Portfólio",
+      "portfolio_title": "Empreendimentos",
+      "easy_mall_desc": "Um dos negócios da Torre Participações — praticidade que melhora a rotina do bairro.",
+      "easy_mall_btn": "Conhecer Unidade",
+      "back_to_top": "Voltar ao Topo"
+    },
+  
+
+  "easy_mall": {
+    "seo_title": "Easy Mall | Convenience in the Torre Neighborhood",
+    "seo_desc": "Easy Mall is Torre Participações' convenience center in Recife. Practicality, commercial space leasing, and ease for your daily routine.",
+    "hero_title_1": "Easy",
+    "hero_title_2": "Mall",
+    "hero_subtitle": "Praticidade que melhora a rotina do bairro.",
+    "p1": "O Easy Mall é um empreendimento da Torre Participações pensado para apoiar o dia a dia de quem vive e circula no bairro da Torre, em Recife, PE.",
+    "p2": "Com um conceito próximo, simples e funcional, o Easy Mall nasce para oferecer uma experiência mais fluida: menos deslocamento, mais conveniência e mais tempo para o que importa.",
+    "p3": "A proposta é ser um ponto de referência do bairro — um lugar que se integra ao ritmo local, facilita a rotina e contribui para uma dinâmica urbana mais prática e leve.",
+    "card_highlight": "O Easy Mall reforça o compromisso da Torre Participações em reunir proximidade, conveniência e eficiência em um único endereço.",
+    "contact_text": "Caso tenha interesse em realizar a locação de um espaço para seu negócio, entre em contato com a LMS Empreendimentos através do",
+    "contact_or": "ou",
+    "contact_link": "clique aqui.",
+    "back_to_top": "Voltar ao Topo"
+  },
+
+  "gestao_creditos": {
+    "seo_title": "Gestão de Créditos",
+    "seo_desc": "Administração de carteira própria NPL com foco em recuperação e eficiência.",
+    "hero_title_1": "Gestão de",
+    "hero_title_2": "Créditos",
+    "hero_subtitle": "Acompanhamento contínuo dos ativos com visão de longo prazo.",
+    "p1": "Na frente de Gestão de Crédito NPL (Non-Performing Loans), a Torre realiza a administração de carteira própria, atuando de forma ativa para estruturar estratégias e conduzir cada ativo com foco em recuperação, eficiência e retorno sustentável, sempre com visão de longo prazo e pragmatismo na execução.",
+    "back_to_top": "Voltar ao Topo"
+  },
+
+  "atuacao_sociocultural": {
+    "seo_title": "Atuação Sociocultural",
+    "seo_desc": "O Instituto Baptista da Silva nasce para fomentar a cultura e estimular o espírito empreendedor.",
+    "hero_title_1": "Atuação",
+    "hero_title_2": "Sociocultural",
+    "hero_subtitle": "Preservação da memória histórica e fomento ao espírito empreendedor.",
+    "p1": "O Instituto Baptista da Silva nasce para fomentar a cultura e estimular o espírito empreendedor, honrando a história de empreendedorismo da família Baptista da Silva e transformando memória em legado.",
+    "card_highlight": "Com uma visão de cultura como trilha completa, o IBS se estrutura para atuar da preservação e valorização da história à educação e ao fomento.",
+    "p2": "De portas abertas para novas descobertas, para o que merece ser mantido e, principalmente, para o que ainda está por ser criado.",
+    "back_to_top": "Voltar ao Topo"
+  },
+
+  "footer": {
+      "endereco": "Rua José Bonifácio, 944, Torre, Recife-PE Brasil 50710-001",
+      "fone": "Fone",
+      "direitos": "© 2026 Torre Participações. Todos os direitos reservados. Presente no futuro."
+    },
+
+  "not_found": {
+    "seo_title": "Página não encontrada",
+    "seo_desc": "O conteúdo que você busca não está disponível ou o endereço foi digitado incorretamente.",
+    "title": "Página não encontrada",
+    "desc": "O conteúdo que você busca não está disponível ou o endereço foi digitado incorretamente.",
+    "btn_back": "Voltar para o Início"
+  }
+
+
+}
