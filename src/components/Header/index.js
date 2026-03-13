@@ -92,6 +92,8 @@ const Header = () => {
         <Link to="/" onClick={handleLogoClick}>
           <img 
             src={useSolidStyle ? "/imagens/LOGO.svg" : "/imagens/LOGO_BRANCA.svg"} 
+            width="150" 
+            height="50"
             alt="Logo Torre" 
             className="w-32 md:w-40 transition-all"
           />

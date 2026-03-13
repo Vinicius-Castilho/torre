@@ -102,8 +102,9 @@ const Home = () => {
           <div className="absolute inset-0 z-0">
             <img 
               src="/imagens/BG_hero.webp"
-              width="200"
-              height="60"
+              width="1920"
+              height="1080"
+              fetchPriority='high'
               alt="Vista aérea histórica da Torre em Recife" 
               className="w-full h-full object-cover opacity-20 mix-blend-overlay"
             />
