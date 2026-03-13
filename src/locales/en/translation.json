@@ -1,8 +1,21 @@
 {
+
+  "whatsapp": {
+      "aria_label": "Chat on WhatsApp"
+    },
+
+  "cookies": {
+    "message": "We use cookies to enhance your experience and analyze site traffic.",
+    "accept": "Accept",
+    "privacy_policy": "Privacy Policy"
+  },
   "header": {
     "quem_somos": "About Us",
     "atuacao": "Business Areas",
-    "contato": "Contact"
+    "contato": "Contact",
+    "aria_menu": "Open navigation menu",
+    "aria_lang_pt": "Change language to Portuguese",
+    "aria_lang_en": "Change language to English"
   },
   "home": {
     "seo": {
@@ -10,7 +23,7 @@
       "description": "Business group with over 150 years of history, acting in real estate development, financial assets, credit management, and strategic holdings in Brazil."
     },
     "hero": {
-      "title": "A Group with over 150 years of achievements",
+      "title": "A group with over 150 years of achievements",
       "subtitle": "A bridge connecting legacy to the future."
     },
     "history": {

@@ -1,8 +1,22 @@
 {
+
+  "whatsapp": {
+      "aria_label": "Conversar no WhatsApp"
+    },
+
+  "cookies": {
+    "message": "Nós utilizamos cookies para melhorar sua experiência e analisar o tráfego do site.",
+    "accept": "Aceitar",
+    "privacy_policy": "Política de Privacidade"
+  },
+  
   "header": {
     "quem_somos": "Quem Somos",
     "atuacao": "Atuação",
-    "contato": "Contato"
+    "contato": "Contato",
+    "aria_menu": "Abrir menu de navegação",
+    "aria_lang_pt": "Alterar idioma para Português",
+    "aria_lang_en": "Alterar idioma para Inglês"
   },
   "home": {
     "seo": {
@@ -10,7 +24,7 @@
       "description": "Grupo empresarial com mais de 150 anos de história, atuando em desenvolvimento imobiliário, gestão de ativos financeiros, gestão de créditos e participações estratégicas no Brasil."
     },
     "hero": {
-      "title": "Um Grupo com mais de 150 anos de realizações",
+      "title": "Um grupo com mais de 150 anos de realizações!",
       "subtitle": "Uma ponte que conecta um legado ao futuro."
     },
     "history": {

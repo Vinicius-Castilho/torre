@@ -101,7 +101,7 @@ const Home = () => {
           {/* Background Layer */}
           <div className="absolute inset-0 z-0">
             <img 
-              src="/imagens/BG.jpg" 
+              src="/imagens/BG_hero.webp" 
               alt="Vista aérea histórica da Torre em Recife" 
               className="w-full h-full object-cover opacity-20 mix-blend-overlay"
             />
@@ -119,7 +119,7 @@ const Home = () => {
               </p>
             </div>
             {/* Scroll Down Arrow */}
-            <a href="#historia">
+            <a aria-label='Conteudo' href="#historia"> 
               <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-40 animate-bounce opacity-50">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -160,7 +160,7 @@ const Home = () => {
             </div>
 
             <div id="historia-imagem" className="hidden md:block rounded-xl h-72 shadow-xl overflow-hidden">
-                <img src="/imagens/BG.jpg" 
+                <img src="/imagens/BG_hero.webp" 
                     alt="Cotonifício da Torre em 1860" 
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
             </div>
@@ -260,7 +260,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-slate-400">{t('home.contact.form.email')}</p>
+                    <p className="text-xs font-bold uppercase tracking-wider text-slate-700">{t('home.contact.form.email')}</p>
                     <a href="mailto:contato@torre.com.br" className="text-torreBlue font-semibold hover:text-torreCyan transition-colors">contato@torre.com.br</a>
                   </div>
                 </div>
@@ -273,7 +273,7 @@ const Home = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-slate-400">Whatsapp</p>
+                    <p className="text-xs font-bold uppercase tracking-wider text-slate-700">Whatsapp</p>
                     <a href="https://wa.me/5581988739689" target="_blank" rel="noreferrer" className="text-torreBlue font-semibold hover:text-torreCyan transition-colors">+55 81 9 8873-9689</a>
                   </div>
                 </div>
@@ -287,7 +287,7 @@ const Home = () => {
                       </svg>
                     </div>
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-slate-400">LinkedIn</p>
+                      <p className="text-xs font-bold uppercase tracking-wider text-slate-700">LinkedIn</p>
                       <span className="text-torreBlue font-semibold group-hover:text-torreCyan transition-colors">Torre Participações</span>
                     </div>
                   </a>

@@ -19,16 +19,18 @@ function RoutesApp() {
             <ScrollToTop />    
             <Header />
             <Whats />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/trajetoria' element={<Trajetoria />} />
-                <Route path='/ativos-financeiros' element={<AtivosFinanceiros />} />
-                <Route path='/desenvolvimento-imobiliario' element={<DesenvolvimentoImobiliario />} />
-                <Route path='/easy-mall' element={<EasyMall />} />
-                <Route path='/gestao-de-creditos' element={<GestaoDeCreditos />} />
-                <Route path='/atuacao-sociocultural' element={<AtuacaoSociocultural />} />
-                <Route path='*' element={<Erro />} />
-            </Routes>
+            <main id='main-content'>
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/trajetoria' element={<Trajetoria />} />
+                    <Route path='/ativos-financeiros' element={<AtivosFinanceiros />} />
+                    <Route path='/desenvolvimento-imobiliario' element={<DesenvolvimentoImobiliario />} />
+                    <Route path='/easy-mall' element={<EasyMall />} />
+                    <Route path='/gestao-de-creditos' element={<GestaoDeCreditos />} />
+                    <Route path='/atuacao-sociocultural' element={<AtuacaoSociocultural />} />
+                    <Route path='*' element={<Erro />} />
+                </Routes>
+            </main>
             <Footer />
         </>
     );

@@ -51,7 +51,8 @@ const Header = () => {
   const LanguageSwitcher = ({ mobile = false }) => (
     <div className={`flex items-center gap-3 ${mobile ? 'mr-4' : 'border-l border-slate-200/20 pl-8'}`}>
       <button 
-        onClick={() => changeLanguage('pt')} 
+        onClick={() => changeLanguage('pt')}
+        aria-label={t('header.aria_lang_pt')} 
         className={`transition-all duration-300 hover:scale-110 ${
           i18n.language.startsWith('pt') 
           ? 'ring-2 ring-torreCyan ring-offset-2 rounded-full scale-105 opacity-100' 
@@ -66,7 +67,8 @@ const Header = () => {
       </button>
 
       <button 
-        onClick={() => changeLanguage('en')} 
+        onClick={() => changeLanguage('en')}
+        aria-label={t('header.aria_lang_en')} 
         className={`transition-all duration-300 hover:scale-110 ${
           i18n.language.startsWith('en') 
           ? 'ring-2 ring-torreCyan ring-offset-2 rounded-full scale-105 opacity-100' 
@@ -125,6 +127,7 @@ const Header = () => {
           {/* Botão Menu Mobile */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={t('header.aria_menu')}
             className={`md:hidden focus:outline-none cursor-pointer z-[70] ${isMenuOpen || !useSolidStyle ? 'text-white' : 'text-sky-900'}`}
           >
             <svg className="w-8 h-8 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
