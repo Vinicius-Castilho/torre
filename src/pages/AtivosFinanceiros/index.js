@@ -115,7 +115,7 @@ const AtivosFinanceiros = () => {
               {/* Adicionada a classe destaque-card para o Reveal funcionar aqui */}
               <div className="bg-slate-50 p-8 rounded-2xl border-l-4 border-torreCyan shadow-sm">
                 <p className="text-torreBlue font-medium italic">
-                {t('ativos_financeiros.p1')}
+                {t('ativos_financeiros.card_highlight')}
                 </p>
               </div>
 

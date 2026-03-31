@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 const Trajetoria = () => {
@@ -18,6 +19,7 @@ const Trajetoria = () => {
     sr.reveal('.hero-content', { origin: 'bottom', delay: 300 });
     sr.reveal('article', { interval: 300, origin: 'bottom', distance: '50px' });
     sr.reveal('blockquote', { origin: 'left', delay: 400 });
+    sr.reveal('.reveal-footer-btn', { origin: 'bottom', delay: 500 });
 
   }, []);
 
@@ -35,7 +37,7 @@ const Trajetoria = () => {
           {/* ==========================================
               SEÇÃO HERO - TRAJETÓRIA (Corrigida)
               ========================================== */}
-          <section className="relative h-[85vh] min-h-[580px] flex items-center justify-center overflow-hidden bg-torreBlue text-center pt-32 pb-[120px] md:pt-40 md:pb-[140px]">
+          <section id='#' className="relative h-[85vh] min-h-[580px] flex items-center justify-center overflow-hidden bg-torreBlue text-center pt-32 pb-[120px] md:pt-40 md:pb-[140px]">
           
           {/* Removida a div que causava o erro do bg-pattern.svg */}
           <div className="absolute inset-0 bg-black/20 z-10"></div>
@@ -155,15 +157,29 @@ const Trajetoria = () => {
           </div>
         </section>
 
-        {/* ==========================================
-            SEÇÃO QUOTE FINAL
-            ========================================== */}
-        <section className="py-24 bg-white border-t border-slate-100 text-center">
+
+        <section className="py-20 bg-white border-t border-slate-100 text-center">
           <div className="max-w-4xl mx-auto px-6">
-            <blockquote className="text-xl md:text-2xl text-slate-700 leading-relaxed font-light mb-8 italic">
-                {t('trajetoria.quote')}
+            <blockquote className="text-xl md:text-2xl text-slate-700 leading-relaxed font-light mb-16 italic">
+              {t('trajetoria.quote')}
             </blockquote>
 
+            {/* Botão integrado com margem controlada */}
+            <div className="reveal-footer-btn flex justify-center pt-8 border-t border-slate-50">
+              <button 
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                className="text-torreBlue group flex items-center gap-4 md:text-slate-400 hover:text-torreBlue transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-full border md:bg-white bg-torreBlue border-torreBlue md:border-slate-200 flex items-center justify-center group-hover:border-torreBlue group-hover:bg-torreBlue group-hover:text-white transition-all">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 md:text-slate-400 text-white group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                  </svg>
+                </div>
+                <span className="font-bold uppercase text-[11px] tracking-[0.3em]">
+                  {t('desenvolvimento_imobiliario.back_to_top')}
+                </span>
+              </button>
+            </div>
           </div>
         </section>
       </main>

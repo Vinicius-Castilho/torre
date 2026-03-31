@@ -23,7 +23,7 @@
       "description": "Business group with over 150 years of history, acting in real estate development, financial assets, credit management, and strategic holdings in Brazil."
     },
     "hero": {
-      "title": "A group with over 150 years of achievements",
+      "title": "A Group with over 150 years of achievements",
       "subtitle": "A bridge connecting legacy to the future."
     },
     "history": {
@@ -85,7 +85,7 @@
         "event2_title": "Cotonifício Torre",
         "event2_desc": "One of the main textile industries in the Northeast of Brazil.",
         "event3_title": "Usina Trapiche",
-        "event3_desc": "One of the largest and most traditional sugar and alcohol production complexes."
+        "event3_desc": "Important sugar and alcohol producing complex in Pernambuco."
       },
       "t1942": {
         "event1_title": "Banco Banorte",
@@ -112,7 +112,7 @@
     "hero_title_2": "Assets",
     "hero_subtitle": "Strategy, allocation, liquidity, and diversification.",
     "p1": "Torre Participações conducts an integrated management of the Group's financial assets, defining the strategy for allocation and portfolio growth with a long-term vision.",
-    "card_highlight": "The performance combines risk discipline, diversification, and governance, seeking sustainable growth and consistency in value generation.",
+    "card_highlight": "The company's approach combines risk management, diversification, and governance, seeking sustainable growth and consistency in value creation",
     "p2": "It executes management guided by analysis, governance, and execution discipline.",
     "back_to_top": "Back to Top"
   },
@@ -164,7 +164,7 @@
     "hero_title_1": "Sociocultural",
     "hero_title_2": "Performance",
     "hero_subtitle": "Preservation of historical memory and fostering of the entrepreneurial spirit.",
-    "p1": "The Baptista da Silva Institute was founded to foster culture and stimulate the entrepreneurial spirit, honoring the history of entrepreneurship of the Baptista da Silva family and transforming memory into legacy.",
+    "p1": "The Baptista da Silva Institute was created to foster culture and education, stimulate entrepreneurship, honor the entrepreneurial history of the Baptista da Silva family, and transform memory into a lasting legacy.",
     "card_highlight": "With a vision of culture as a complete journey, the IBS is structured to act from the preservation and enhancement of history to education and promotion.",
     "p2": "Open to new discoveries, to what deserves to be maintained, and, above all, to what is yet to be created.",
     "back_to_top": "Back to Top"
@@ -182,5 +182,17 @@
     "title": "Page not found",
     "desc": "The content you are looking for is not available or the address was typed incorrectly.",
     "btn_back": "Back to Home"
+  },
+
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This policy describes how we handle information collected during your navigation.",
+    "data_collection_title": "Data Collection",
+    "data_collection_text": "We only collect data voluntarily provided through our contact forms and basic technical information via cookies.",
+    "cookies_title": "Use of Cookies",
+    "cookies_text": "We use cookies to improve site performance and analyze traffic anonymously.",
+    "rights_title": "Your Rights",
+    "rights_text": "You may request access, correction, or deletion of your data at any time through our official channels.",
+    "back_to_home": "Back to Home"
   }
 }

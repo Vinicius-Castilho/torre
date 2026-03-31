@@ -11,6 +11,7 @@ import Header from './components/Header';
 import ScrollToTop from './components/ScrollToTop';
 import Whats from './components/Whats';
 import Footer from './components/Footer';
+import PoliticaPrivacidade from './pages/PoliticaPrivacidade';
 import Erro from './pages/Erro';
 
 function RoutesApp() {
@@ -28,6 +29,7 @@ function RoutesApp() {
                     <Route path='/easy-mall' element={<EasyMall />} />
                     <Route path='/gestao-de-creditos' element={<GestaoDeCreditos />} />
                     <Route path='/atuacao-sociocultural' element={<AtuacaoSociocultural />} />
+                    <Route path='/politica-de-privacidade' element={<PoliticaPrivacidade />} />
                     <Route path='*' element={<Erro />} />
                 </Routes>
             </main>

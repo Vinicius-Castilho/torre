@@ -24,12 +24,12 @@
       "description": "Grupo empresarial com mais de 150 anos de história, atuando em desenvolvimento imobiliário, gestão de ativos financeiros, gestão de créditos e participações estratégicas no Brasil."
     },
     "hero": {
-      "title": "Um grupo com mais de 150 anos de realizações!",
+      "title": "Um Grupo com mais de 150 anos de realizações",
       "subtitle": "Uma ponte que conecta um legado ao futuro."
     },
     "history": {
       "title": "Sobre Nós",
-      "p1": "A Torre Participações é uma holding de investimentos privada, com foco na criação de valor e na perpetuação do patrimônio.",
+      "p1": "A Torre Participações é uma holding de investimentos privada, com foco na criação de valor e na perpetuação de patrimônio.",
       "p2": "Ao longo de quase dois séculos, o Grupo construiu uma trajetória marcada por investimentos em diferentes áreas, sempre se adaptando às transformações de cada momento e mantendo o olhar para o futuro.",
       "button": "Saiba Mais"
     },
@@ -86,7 +86,7 @@
         "event2_title": "Cotonifício Torre",
         "event2_desc": "Uma das principais indústrias têxteis do Nordeste.",
         "event3_title": "Usina Trapiche",
-        "event3_desc": "Um dos maiores e mais tradicionais complexos produtores de açúcar e álcool."
+        "event3_desc": "Importante complexo produtor de açúcar e álcool em Pernambuco."
       },
       "t1942": {
         "event1_title": "Banco Banorte",
@@ -158,7 +158,7 @@
     "hero_title_1": "Gestão de",
     "hero_title_2": "Créditos",
     "hero_subtitle": "Acompanhamento contínuo dos ativos com visão de longo prazo.",
-    "p1": "Na frente de Gestão de Crédito NPL (Non-Performing Loans), a Torre realiza a administração de carteira própria, atuando de forma ativa para estruturar estratégias e conduzir cada ativo com foco em recuperação, eficiência e retorno sustentável, sempre com visão de longo prazo e pragmatismo na execução.",
+    "p1": "Na área de Gestão de Crédito NPL (Non-Performing Loans), a Torre realiza a administração de carteira própria, atuando de forma ativa para estruturar estratégias e conduzir cada ativo com foco em recuperação, eficiência e retorno sustentável, sempre com visão de longo prazo e pragmatismo na execução.",
     "back_to_top": "Voltar ao Topo"
   },
 
@@ -168,7 +168,7 @@
     "hero_title_1": "Atuação",
     "hero_title_2": "Sociocultural",
     "hero_subtitle": "Preservação da memória histórica e fomento ao espírito empreendedor.",
-    "p1": "O Instituto Baptista da Silva nasce para fomentar a cultura e estimular o espírito empreendedor, honrando a história de empreendedorismo da família Baptista da Silva e transformando memória em legado.",
+    "p1": "O Instituto Baptista da Silva nasce para fomentar a cultura, a educação e estimular o espírito empreendedor, honrando a história de empreendedorismo da família Baptista da Silva e transformando memória em legado contínuo.",
     "card_highlight": "Com uma visão de cultura como trilha completa, o IBS se estrutura para atuar da preservação e valorização da história à educação e ao fomento.",
     "p2": "De portas abertas para novas descobertas, para o que merece ser mantido e, principalmente, para o que ainda está por ser criado.",
     "back_to_top": "Voltar ao Topo"
@@ -186,6 +186,18 @@
     "title": "Página não encontrada",
     "desc": "O conteúdo que você busca não está disponível ou o endereço foi digitado incorretamente.",
     "btn_back": "Voltar para o Início"
+  },
+
+  "privacy": {
+    "title": "Política de Privacidade",
+    "intro": "Esta política descreve como tratamos as informações coletadas durante sua navegação.",
+    "data_collection_title": "Coleta de Dados",
+    "data_collection_text": "Coletamos apenas dados fornecidos voluntariamente através de nossos formulários de contato e informações técnicas básicas via cookies.",
+    "cookies_title": "Uso de Cookies",
+    "cookies_text": "Utilizamos cookies para melhorar a performance do site e analisar o tráfego de forma anônima.",
+    "rights_title": "Seus Direitos",
+    "rights_text": "Você pode solicitar o acesso, correção ou exclusão de seus dados a qualquer momento através dos nossos canais oficiais.",
+    "back_to_home": "Voltar para o Início"
   }
 
 
