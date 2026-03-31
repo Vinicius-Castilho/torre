@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 import SEO from '../../components/SEO';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 
 
 const Trajetoria = () => {
